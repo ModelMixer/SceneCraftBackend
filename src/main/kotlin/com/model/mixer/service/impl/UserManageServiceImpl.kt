@@ -1,9 +1,9 @@
 package com.model.mixer.service.impl
 
+import com.model.mixer.jooq.tables.User
 import com.model.mixer.model.dto.UserResult
 import com.model.mixer.service.UserManageService
 import org.jooq.DSLContext;
-import org.jooq.generated.tables.User
 import org.springframework.stereotype.Service
 
 @Service

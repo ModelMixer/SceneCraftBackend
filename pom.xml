@@ -139,6 +139,10 @@
                             <javaTimeTypes>true</javaTimeTypes>
                             <fluentSetters>true</fluentSetters>
                         </generate>
+                        <target>
+                            <packageName>com.model.mixer.jooq</packageName>
+                            <directory>src/main/kotlin</directory>
+                        </target>
                     </generator>
                 </configuration>
             </plugin>
