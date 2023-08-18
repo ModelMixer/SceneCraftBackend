@@ -1,0 +1,44 @@
+server:
+  port: 9202
+  servlet:
+    context-path: /v1
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
+  tomcat:
+    uri-encoding: UTF-8
+
+spring:
+  servlet:
+    multipart:
+      max-file-size: 200MB
+      max-request-size: 200MB
+  # ############################################# MySQL 配置 ############################################
+  datasource:
+    url: jdbc:mysql://182.254.225.216:3306/model_mixer?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT%2B88&useSSL=false
+    username: root
+    password: 8662291069wzc
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+# ############################################# Mysql 配置 ############################################
+
+# ############################################# mybatis 配置文件 #######################################
+mybatis:
+  config-location: classpath:mybatis-config.xml
+# ############################################# mybatis 配置文件 #######################################
+jwt:
+  secret: secret
+  expiration: 7200000
+  refreshExpiration: 864000000
+  token: Authorization
+
+Base64Response: false
+# 文件上传地址，本地测试请更改此路径
+file:
+  ### Linux
+  upload-path: /home/oss
+  ### windows
+#  upload-path: D:\\oss
+#  upload-url: http://172.18.175.93
+  upload-url: http://182.254.225.216

@@ -1,0 +1,11 @@
+spring:
+  profiles:
+    #   active: presto
+#    active: local
+    active: local
+  #    active: dev
+  #    active: prod
+
+  #logging:
+  #config: classpath:logback-spring.xml
+#mvn clean package -Dmaven.test.skip=true
