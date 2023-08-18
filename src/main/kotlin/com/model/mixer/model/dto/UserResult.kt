@@ -8,9 +8,8 @@ class UserResult {
     var id: Int? = null
 
     @ApiModelProperty("用户名称")
-    var username: String = String()
-
+    var userName: String = String()
 
     @ApiModelProperty("昵称")
-    var nickname: String? = null
+    var nickName: String? = null
 }

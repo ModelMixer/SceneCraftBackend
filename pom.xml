@@ -44,7 +44,6 @@
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
             <scope>runtime</scope>
-            <version>8.0.12</version>
         </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>
@@ -124,14 +123,14 @@
                 <configuration>
                     <jdbc>
                         <driver>com.mysql.cj.jdbc.Driver</driver>
-                        <url>jdbc:mysql://47.97.123.182:3306/model_mixer?useSSL=false</url>
+                        <url>jdbc:mysql://47.97.123.182:3306?useSSL=false</url>
                         <user>root</user>
                         <password>8662291069wzc</password>
                     </jdbc>
                     <generator>
                         <database>
                             <includes>.*</includes>
-                            <inputSchema>operating_system</inputSchema>
+                            <inputSchema>model_mixer</inputSchema>
                         </database>
                         <generate>
                             <deprecated>false</deprecated>
@@ -140,11 +139,6 @@
                             <javaTimeTypes>true</javaTimeTypes>
                             <fluentSetters>true</fluentSetters>
                         </generate>
-                        <target>
-                            <packageName>com.model.mixer.jooq</packageName>
-                            <directory>/src</directory>
-                        </target>
-
                     </generator>
                 </configuration>
             </plugin>

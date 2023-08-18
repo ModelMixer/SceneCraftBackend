@@ -20,8 +20,6 @@ import java.util.*
 @EnableSwagger2
 @Profile("local", "prod")
 class SwaggerConfig {
-    //swagger配置
-
     @Bean
     fun createRestApi(): Docket {
         return Docket(DocumentationType.SWAGGER_2).apiInfo(apiInfo())
